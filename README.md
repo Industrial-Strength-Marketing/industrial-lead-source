@@ -1,8 +1,8 @@
 Industrial Lead Source
 ======================
 
-This is a javascript helper library for storing utm traffic source information client side in browser cookies. 
-The library will parse `utm` parameters or set them to appropriate values. 
+A javascript helper library marketing attribution. The library will parse `utm` parameters or set them to appropriate values and 
+store them in browser cookies. 
 It's up to the developer to retrieve information from the cookies and send it to third-party systems or hidden form fields.
 
 
@@ -20,9 +20,9 @@ These utm url params are parsed and stored:
 
 ### Usage:
 
-Include js file/code in your page: 
+Include javascript library in your page: 
 
-Initialize
+Initialize (DomContentLoaded or similar)
 ```
 var ils = new IndustrialLeadSource(document);
 ```
