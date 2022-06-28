@@ -1,0 +1,32 @@
+{
+    "name": "industrial-lead-source",
+    "version": "2.1.7",
+    "description": "Clientside cookie tracking of traffic attribution source based on utm url params",
+    "scripts": {
+        "test": "concurrently  -k 'npm:test-serve' 'npx cypress run --browser chrome --headless'",
+        "test:interactive": "concurrently  -k 'npm:test-serve' 'npx cypress open'",
+        "build": "uglifyjs --compress  --output dist/industrial.lead.source.min.js src/*.js",
+        "release": "npm version patch",
+        "preversion": "npm run test",
+        "preversion:src": "replace '\\d+\\.\\d+\\.\\d+' \"$npm_package_version\" ./src/industrial.lead.source.js",
+        "version": "npm run preversion:src && npm run build && git add -A .",
+        "postversion": "git push && git push --tags",
+        "test-serve": "http-server ./ -s"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+ssh://git@bitbucket.org/weareindustrial/industrial-lead-source.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "homepage": "https://bitbucket.org/weareindustrial/industrial-lead-source#readme",
+    "devDependencies": {
+        "cypress": "^10",
+        "http-server": "^14",
+        "replace": "^1.2.1",
+        "uglify-js": "latest"
+    },
+    "dependencies": {
+        "concurrently": "^6.1.0"
+    }
+}
