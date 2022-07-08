@@ -1,9 +1,9 @@
 Industrial Lead Source
 ======================
 
-A javascript helper library marketing attribution. The library will parse `utm` parameters or set them to appropriate values and 
+A javascript helper library for marketing attribution. The library will parse `utm` parameters from the url or set them to appropriate values and 
 store them in browser cookies. 
-It's up to the developer to retrieve information from the cookies and send it to third-party systems or hidden form fields.
+It's up to the developer to retrieve information from the stored cookies and send it to third-party systems.
 
 
 UTM Url Params
