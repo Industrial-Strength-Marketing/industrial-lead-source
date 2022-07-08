@@ -44,7 +44,6 @@ var values = ils.getStoredValues();//object with utm_campaign, utm_source... etc
 
 ---
 
-See further info about rules for cookie values at this [diagram](support/industrial-lead-source-diagram.svg)
+See this diagram for how utm params are parsed or set to default values based on referrer.
 
-
-
+![Parsing Diagram](support/industrial-lead-source-diagram.svg?raw=true "Title")
