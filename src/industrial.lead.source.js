@@ -231,6 +231,7 @@ IndustrialLeadSource.prototype.getStoredValues = function() {
     values.utm_medium = this.getCookie("utm_medium");
     values.utm_campaign = this.getCookie("utm_campaign");
     values.utm_term = this.getCookie("utm_term");
+    values.utm_content = this.getCookie("utm_content");
     return values;
 };
 
